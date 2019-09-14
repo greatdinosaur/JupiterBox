@@ -89,9 +89,9 @@ if (!empty($result) && $result->num_rows > 0) {
         echo "<td>". $row["thename"] ."</td>";
         echo "<td>". $row["theContent"] ."</td>";
         echo "<td class=\"text-nowrap bd-highlight\" style=\"width: 8rem;\">". $row["theTime"] ."</td>";
-        echo "<td>". $row["theLaw"] ."</td>";
+&         echo "<td class=\"alert " . (!strcmp($row["theLaw"],"合法")?"alert-success":"alert-warning") . "\">". $row["theLaw"] ."</td>";
         echo "<td class=\"text-monospace text-nowrap bd-highlight f12\">". $row["theHash"] ."</td>";
-        echo "<td class=\"text-monospace font-weight-light bd-highlight f12\"><a class=\"f11\" href=\"". $row["theURL"] ."\">". substr($row["theURL"], 33) ."</td>";
+        echo "<td class=\"text-monospace font-weight-light bd-highlight f12\"><a target=\"_blank\" class=\"f11\" href=\"". $row["theURL"] ."\">". substr($row["theURL"], 33) ."</td>";
         echo "</tr>";
     }
     ?>
@@ -104,9 +104,14 @@ window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/datatables.min.js"></script>
 <script>
-$(document).ready(function() {
-    $('#sortable').DataTable();
-} );
+  $(document).ready(function() {
+    $('#sortable').DataTable( {
+
+      "order": [[ 0, 'desc' ]],
+      "pageLength": 50
+      
+    } );
+  } );
 </script>
 </body>
 </html>

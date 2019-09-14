@@ -1,11 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-
 import time
 import sys, pygame
 import cv2
-
 import numpy as np
 
 from PIL import Image, ImageDraw, ImageFont
@@ -13,14 +10,10 @@ from PIL import Image, ImageDraw, ImageFont
 import urllib, sys
 import urllib.request as urllib2
 import ssl
-
 import base64
 import json
-
 import os
-
 import binascii
-
 import hashlib
 
 

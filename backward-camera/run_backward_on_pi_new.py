@@ -203,7 +203,6 @@ def chazhao_face(myname):
             thename = "未授权用户"	
 			
     #print(thename)
-	
     if thename == 'caixin':
         thename_cn = "蔡欣 "
     elif thename == 'jiningning':

@@ -3,7 +3,7 @@ $servername = "mysql.rdsm7htgcrx38if.rds.bj.baidubce.com";
 $username = "hackathon2019";
 $password = "hackathon2019";
 $dbname = "hackathon2019";
-// Create connection
+// connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
@@ -81,6 +81,7 @@ if (!empty($result) && $result->num_rows > 0) {
       <th scope="col">theURL</th>
     </tr>
   </thead>
+
   <tbody>
     <?php
     // output data of each row

@@ -1,8 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+
 import time
 import sys, pygame
 import cv2
+
 import numpy as np
 
 from PIL import Image, ImageDraw, ImageFont
@@ -10,10 +13,14 @@ from PIL import Image, ImageDraw, ImageFont
 import urllib, sys
 import urllib.request as urllib2
 import ssl
+
 import base64
 import json
+
 import os
+
 import binascii
+
 import hashlib
 
 
@@ -203,6 +210,7 @@ def chazhao_face(myname):
             thename = "未授权用户"	
 			
     #print(thename)
+	
     if thename == 'caixin':
         thename_cn = "蔡欣 "
     elif thename == 'jiningning':

@@ -1,12 +1,17 @@
 # JupiterBox
-——The Apparatus for Storage of Driving Evidence on Blockchain
+——The Equipment for Storage of Driving Evidence on Blockchain
+```
 驾驶行为数据存证装置
 Team Jupiter（蔡欣  张伟杰  申兆斌  朱文敏  纪宁宁）
 2019-09-15
 WanXiang Blockchain Hackathon @ ShangHai
+```
 
-###文件
-run_backward.py（运行环境Ubuntu18.04，python3.7）
+###文件（运行环境Ubuntu18.04，python3.7）
+```
+run_backward.py
+run_backward_on_pi_new.py(raspberry pi version)
+```
 
 ###流程思路：
 1.从摄像头截图，得到capture.jpg

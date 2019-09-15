@@ -2,7 +2,7 @@
 $servername = "mysql.rdsm7htgcrx38if.rds.bj.baidubce.com";
 $username = "hackathon2019";
 $password = "hackathon2019";
-$dbname = "hackathon2019";
+$dbname = "hackathon2019"; 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

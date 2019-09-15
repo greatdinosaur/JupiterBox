@@ -199,14 +199,14 @@ def chazhao_face(myname):
         #正常的操作
         thename = content_a_face["result"][0]["uid"]
     except:
-        #发生异常，执行这块代码
+        #发生异常，执行这块代码 
         thename = "无人"
     else:
         #如果没有异常执行这块代码	
         thename = content_a_face["result"][0]["uid"]
         thescores = content_a_face["result"][0]["scores"]
         print(thescores[0])
-        if int(thescores[0]) < 60:  #小于60分 就不认为是这张脸
+        if int(thescores[0]) < 60:  #检测小于60分 就不认为是这张脸
             thename = "未授权用户"	
 			
     #print(thename)
